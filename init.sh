@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 mkdir /opt/redis
 mkdir /opt/redis/bin
 
