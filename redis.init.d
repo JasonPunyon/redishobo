@@ -19,8 +19,8 @@ CONFIG_FILE=/etc/redis.conf
 DAEMON_ARGS="$CONFIG_FILE"
 NAME=redis-server
 DESC=redis-server
-PIDFILE=/var/run/redis.pid
-LOGFILE=/var/log/redis.log
+PIDFILE=/var/redis/redis.pid
+LOGFILE=/var/redis/redis.log
 
 test -x $DAEMON || exit 0
 test -x $DAEMONBOOTSTRAP || exit 0
