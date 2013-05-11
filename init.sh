@@ -3,10 +3,10 @@ mkdir /opt/redis
 mkdir /opt/redis/bin
 
 cd /opt/redis
-wget http://redis.googlecode.com/files/redis-2.6.7.tar.gz
-tar xzf redis-2.6.7.tar.gz
+wget http://redis.googlecode.com/files/redis-2.6.13.tar.gz
+tar xzf redis-2.6.13.tar.gz
 
-cd redis-2.6.7
+cd redis-2.6.13
 make
 
 cp src/redis-server /opt/redis/bin/redis-server
