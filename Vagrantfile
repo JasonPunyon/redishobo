@@ -1,4 +1,4 @@
-Vagrant::Config.run do |config|
+Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu-12.04-amd64"
 
   # THE URL FROM WHERE THE 'CONFIG.VM.BOX' BOX WILL BE FETCHED IF IT
