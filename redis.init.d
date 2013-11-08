@@ -15,12 +15,12 @@
 PATH=/opt/redis/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=`which redis-server`
 REDIS_CLI=`which redis-cli`
-CONFIG_FILE=/etc/redis.conf
+CONFIG_FILE=/etc/redis/6379.conf
 DAEMON_ARGS="$CONFIG_FILE"
 NAME=redis-server
 DESC=redis-server
-PIDFILE=/var/redis/redis.pid
-LOGFILE=/var/redis/redis.log
+PIDFILE=/var/redis/6379.pid
+LOGFILE=/var/redis/6379.log
 
 test -x $DAEMON || exit 0
 test -x $DAEMONBOOTSTRAP || exit 0
