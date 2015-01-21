@@ -20,4 +20,5 @@ chmod -R 777 /var/redis
 
 useradd redis
 
+chmod 755 /etc/init.d/redis
 /etc/init.d/redis start
