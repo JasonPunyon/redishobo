@@ -1,14 +1,15 @@
-A simple vagrant configuration to create a box running redis. More [here](http://jasonpunyon.com/blog/2013/01/28/get-your-redis-on-on-windows/)
+A simple vagrant configuration to create a box running redis.
 
-## Instructions
+## Setup
 
+1. Install [vagrant](http://www.vagrantup.com/)
+1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+1. Clone the project locally: `git clone git@github.com:Kevinlearynet/redishobo.git vagrant-redis-basic`
+1. Move into the project directory: `cd vagrant-redis-basic`  
+1. Provision the virtual machine using Vagrant: `vagrant up`
+1. Make sure you have the Redis CLI installed: `brew install redis` (Mac)
+1. Test the connection to verify everything is working: `redis-cli -p 6379` (or any other cluster port)
 
-0. Install Vagrant (http://docs.vagrantup.com/v1/docs/getting-started/index.html)
-1. Clone the repo.
-2. cd to that directory.
-3. vagrant up.
-4. Enjoy a tasty beverage. You've earned it.
+You should now have a redis server running locally at:
 
-## License
-
-Just don't sue me or cause someone else to want to sue me, OK?
+* `127.0.0.1:6379`
